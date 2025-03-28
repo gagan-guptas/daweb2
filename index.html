@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Ticket Booking</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,13 +22,18 @@
             padding: 15px 20px;
             color: white;
         }
-        .navbar a {
+        .nav-links {
+            display: flex;
+            text-align: right;
+        }
+        .nav-links a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 5px 0;
             font-weight: bold;
+            display: block;
         }
-        .navbar a:hover {
+        .nav-links a:hover {
             text-decoration: underline;
         }
 
@@ -64,7 +69,7 @@
         }
         .event {
             background: white;
-            padding: 15px;
+            padding: 30px;
             margin: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -78,11 +83,6 @@
         .event p {
             color: gray;
         }
-         @media screen and (max-width: 768px) {
-            .navbar a[href="booking.html"] {
-                display: none;
-            }
-        }
     </style>
 </head>
 <body>
@@ -90,7 +90,7 @@
     <!-- Navbar -->
     <div class="navbar">
         <h2>🎟 Ticket Booking</h2>
-        <div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="login.html">Login</a>
             <a href="register.html">Register</a>
