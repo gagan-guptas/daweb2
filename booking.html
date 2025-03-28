@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="booking.html">Book Tickets</a>
+    </nav>
+    
+    <div class="container">
+        
+        <h1>Book Your Seat</h1>
+        <label for="eventSelect"><strong>Select Event:</strong></label>
+        <select id="eventSelect" required>
+            <option value="" disabled selected>Select an Event</option>
+            <option value="concert">Live Concert</option>
+            <option value="movie">Movie Screening</option>
+            <option value="sports">Sports Match</option>
+        </select>
+
+
+        <p><strong>Selected Seats:</strong> <span id="selectedSeats">None</span></p>
+        <div class="legend">
+            <div><span class="box available"></span> Available</div>
+            <div><span class="box selected"></span> Selected</div>
+            <div><span class="box sold"></span> Sold</div>
+        </div>
+
+        <div class="seat-container" id="seats"></div>
+        <!-- Event Selection -->
+
+        <form>
+            <input type="text" placeholder="Card Number" required>
+            <input type="text" placeholder="Cardholder Name" required>
+            <input type="text" placeholder="Expiry Date (MM/YY)" required>
+            <input type="text" placeholder="CVV" required>
+        </form>
+                <!-- Checkbox for Email/SMS Notification -->
+                <div>
+                    <input type="checkbox" id="notifyCheckbox">
+                    <label for="notifyCheckbox">Send booking confirmation via Email/SMS</label>
+                </div>
+        <button id="bookBtn">Book Selected Seats</button>
+    </div>
+
+</body>
+
+</html>

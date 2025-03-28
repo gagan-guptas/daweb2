@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF5E1;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FF6F61;
+            padding: 15px 20px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: url('event-bg.jpg') no-repeat center center/cover;
+            color: rgb(51, 37, 37);
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .btn {
+            background: #FF9A00;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: orange;
+        }
+
+        /* Event Listings */
+        .events {
+            text-align: center;
+        }
+        .event {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 250px;
+        }
+        .event img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .event p {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>🎟 Ticket Booking</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="booking.html">Book Tickets</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Book Your Favorite Event Tickets Online!</h1>
+        <p>Concerts, Movies, Sports, and More – Grab Your Seats Now!</p>
+        <a href="booking.html"><button class="btn">Book Now</button></a>
+    </div>
+
+    <!-- Event Listings -->
+    <div class="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="event">
+            <img src="concert.jpg" alt="Concert">
+            <h3>Live Concert</h3>
+            <p>Rock with the best bands in town!</p>
+        </div>
+
+        <div class="event">
+            <img src="movie.jpg" alt="Movie">
+            <h3>Latest Movie Screening</h3>
+            <p>Experience the magic of cinema.</p>
+        </div>
+
+        <div class="event">
+            <img src="sports.jpg" alt="Sports">
+            <h3>Sports Match</h3>
+            <p>Watch your favorite teams battle it out!</p>
+        </div>
+    </div>
+
+</body>
+</html>

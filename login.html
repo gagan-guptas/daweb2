@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="booking.html">Book Tickets</a>
+    </nav>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Invalid User</p>
+
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Predefined credentials
+            const validEmail = "admin@example.com";
+            const validPassword = "password123";
+    
+            // Get user input
+            let enteredEmail = document.getElementById("loginEmail").value;
+            let enteredPassword = document.getElementById("loginPassword").value;
+    
+            if (enteredEmail === validEmail && enteredPassword === validPassword) {
+                alert("Login Successful!");
+                window.location.href = "booking.html"; // Redirect to booking page
+            } else {
+                document.getElementById("loginError").style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5E1; /* Light Cream */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #FF6F61; /* Coral Red */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: #D84315; /* Darker Orange */
+}
+
+/* Page Container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #FF9A00; /* Golden Yellow */
+    border-radius: 5px;
+}
+
+button {
+    background: #FF9A00; /* Golden Yellow */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* Seat Booking */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.available {
+    background: white;
+}
+.selected {
+    background: #4CAF50; /* Green */
+}
+.sold {
+    background: #D84315; /* Dark Orange */
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.seat.sold {
+    background: #D84315; /* Dark Orange */
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background: #4CAF50; /* Green */
+}
